@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Item Details</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="item-details">
+      <h1>Item Details</h1>
+      <div class="item-image">
+        <img src="" alt="Item Image" id="itemImage">
+      </div>
+      <h2 id="itemName"></h2>
+      <p id="itemPrice"></p>
+      <p id="itemstatus"></p>
+      <h4>About this plant</h4>
+      <p id="itemdetails"></p>
+    </div>
+  </div>
+
+  <script>
+
+     
+  // Function to parse URL query parameters
+function getQueryVariable(variable) {
+  const query = window.location.search.substring(1);
+  const vars = query.split('&');
+  for (let i = 0; i < vars.length; i++) {
+    const pair = vars[i].split('=');
+    if (decodeURIComponent(pair[0]) === variable) {
+      return decodeURIComponent(pair[1]);
+    }
+  }
+  return null;
+}
+
+// Get item details from query parameters
+const itemName = getQueryVariable('name');
+const itemPrice = getQueryVariable('price');
+const itemImage = getQueryVariable('image');
+const itemstatus = getQueryVariable('status');
+const itemdetails = getQueryVariable('details');
+
+// Display item details on the page
+document.getElementById('itemName').textContent = itemName;
+document.getElementById('itemPrice').textContent = `Price: ${itemPrice}`;
+document.getElementById('itemImage').src = `images/${itemImage}`;
+document.getElementById('itemImage').alt = itemName;
+document.getElementById('itemstatus').textContent = itemstatus;
+document.getElementById('itemdetails').textContent = itemdetails;
+  </script>
+</body>
+</html>
