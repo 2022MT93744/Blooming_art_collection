@@ -176,3 +176,10 @@ body {
   color: #007bff;
   text-decoration: none;
 }
+
+.indexname {
+  font-style: italic;
+  font-size: larger;
+  float: left;
+  font-weight: bold;
+}
