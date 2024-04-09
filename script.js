@@ -75,7 +75,15 @@ const imageInfo = [
     { name: 'pl05.jpeg', title: 'Hand painted planters', price: '₹199', status:'Available', details:planter },
     { name: 'pl06.jpeg', title: 'Hand painted planters', price: '₹199', status:'Available', details:planter },
     { name: 'pl07.jpeg', title: 'Hand painted planters', price: '₹199', status:'Available', details:planter },
-    { name: 'pl04.jpeg', title: 'Hand painted planters', price: '₹89', status:'Available', details:planter }
+    { name: 'pl04.jpeg', title: 'Hand painted planters', price: '₹89', status:'Available', details:planter },
+    //sold planters
+    { name: 'pls01.jpeg', title: 'Hand painted planters', price: '₹299', status:'Not Available', details:planter },
+    { name: 'pls02.jpeg', title: 'Hand painted planters', price: '₹49', status:'Not Available', details:planter },
+    { name: 'pls03.jpeg', title: 'Hand painted planters', price: '₹99', status:'Not Available', details:planter },
+    { name: 'pls04.jpeg', title: 'Hand painted planters', price: '₹149', status:'Not Available', details:planter },
+    { name: 'pls05.jpeg', title: 'Hand painted planters', price: '₹199', status:'Not Available', details:planter },
+    { name: 'pls06.jpeg', title: 'Hand painted planters', price: '₹149', status:'Not Available', details:planter },
+    
   ];
   
   const galleryContainer = document.getElementById('imageGallery');
