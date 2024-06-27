@@ -25,26 +25,21 @@ const sydersnakep = "The Spider Plant, known for its long, arching foliage and a
 
 const imageInfo = [
 	  //topiary plants
-    { name: 'p02.jpeg', title: "Topiary of Money plant", price: '₹2999', status:'Available', details:topiarp },
     { name: 'p08.jpeg', title: "Topiary of Money plant & Spider plant", price: '₹999', status:'Available', details:topiarp },
     { name: 'p18.jpeg', title: 'Spider Plant & Snake plant', price: '₹1099', status:'Available', details:sydersnakep },
 
     //Big plants
     { name: 'p01.jpeg', title: 'ZZ plant', price: '₹499', status:'Available', details:zzp },
     { name: 'p07.jpeg', title: 'Ajwain plant', price: '₹499', status:'Available', details:ajwinp },
-    { name: 'p10.jpeg', title: 'Snake plant', price: '₹299', status:'Available', details:snakep },
-    { name: 'p30.jpeg', title: 'Snake plant', price: '₹299', status:'Available', details:snakep },
     { name: 'p33.jpeg', title: "Devil's Backbone", price: '₹299', status:'Available', details:devilbbp },
 
     //Small plants
     { name: 'p04.jpeg', title: 'Reo Plant', price: '₹99', status:'Available', details:reop },
-    { name: 'p05.jpeg', title: "Devil's Backbone", price: '₹249', status:'Available', details:devilbbp },
     { name: 'p09.jpeg', title: 'Cylindrical snake plant', price: '₹399', status:'Available', details:cylsnakep },
     { name: 'p13.jpeg', title: 'Spider Plant', price: '₹99', status:'Available', details:spiderp },
     { name: 'p19.jpeg', title: 'Dwarf Areca Palm', price: '₹299', status:'Available', details:dwarfepalmp },
     { name: 'p20.jpeg', title: 'Hoya plants', price: '₹199', status:'Available', details:hoyap },
 	  { name: 'p21.jpeg', title: 'Patharchatta', price: '₹99', status:'Available', details:patharchattap },
-    { name: 'p22.jpeg', title: 'Aloe vera plant', price: '₹99', status:'Available', details:aloep },
     { name: 'p23.jpeg', title: "Devil's Backbone", price: '₹199', status:'Available', details:devilbbp },
     { name: 'p24.jpeg', title: 'Broken Heart plant', price: '₹249', status:'Available', details:brokheartp },
     { name: 'p25.jpeg', title: 'Neon Money Plant', price: '₹249', status:'Available', details:neonp },
@@ -58,9 +53,8 @@ const imageInfo = [
     { name: 'p36.jpeg', title: 'Wandering Jew', price: '₹99', status:'Available', details:jewp },
 
     //hanging plants
-    { name: 'p35.jpeg', title: 'Portulaca', price: '₹69', status:'Available', details:portulecap },
+    
     { name: 'p11.jpeg', title: 'Money plant', price: '₹99', status:'Available', details:moneyp },
-    { name: 'p14.jpeg', title: 'Crown of thorns plant', price: '₹299', status:'Available', details:mcrownthronp },
     { name: 'p15.jpeg', title: 'Donkey Ear plant', price: '₹99', status:'Available', details:donkyp },
     { name: 'p16.jpeg', title: 'Spider Plant', price: '₹499', status:'Available', details:spiderp },
     
@@ -77,13 +71,21 @@ const imageInfo = [
     { name: 'pl07.jpeg', title: 'Hand painted planters', price: '₹199', status:'Available', details:planter },
     { name: 'pl04.jpeg', title: 'Hand painted planters', price: '₹89', status:'Available', details:planter },
     //sold planters
-    { name: 'pls01.jpeg', title: 'Hand painted planters', price: '₹299', status:'Not Available', details:planter },
-    { name: 'pls02.jpeg', title: 'Hand painted planters', price: '₹49', status:'Not Available', details:planter },
-    { name: 'pls03.jpeg', title: 'Hand painted planters', price: '₹99', status:'Not Available', details:planter },
-    { name: 'pls04.jpeg', title: 'Hand painted planters', price: '₹149', status:'Not Available', details:planter },
-    { name: 'pls05.jpeg', title: 'Hand painted planters', price: '₹199', status:'Not Available', details:planter },
-    { name: 'pls06.jpeg', title: 'Hand painted planters', price: '₹149', status:'Not Available', details:planter },
-    
+    { name: 'pls01.jpeg', title: 'Hand painted planters', price: 'SOLD', status:'Booking Available', details:planter },
+    { name: 'pls02.jpeg', title: 'Hand painted planters', price: 'SOLD', status:'Booking Available', details:planter },
+    { name: 'pls03.jpeg', title: 'Hand painted planters', price: 'SOLD', status:'Booking Available', details:planter },
+    { name: 'pls04.jpeg', title: 'Hand painted planters', price: 'SOLD', status:'Booking Available', details:planter },
+    { name: 'pls05.jpeg', title: 'Hand painted planters', price: 'SOLD', status:'Booking Available', details:planter },
+    { name: 'pls06.jpeg', title: 'Hand painted planters', price: 'SOLD', status:'Booking Available', details:planter },
+    //sold planters to Sanhita
+    { name: 'p02.jpeg', title: "Topiary of Money plant", price: 'SOLD', status:'Booking Available', details:topiarp },
+    { name: 'p10.jpeg', title: 'Snake plant', price: 'SOLD', status:'Booking Available', details:snakep },
+    { name: 'p30.jpeg', title: 'Snake plant', price: 'SOLD', status:'Booking Available', details:snakep },
+    { name: 'p05.jpeg', title: "Devil's Backbone", price: 'SOLD', status:'Booking Available', details:devilbbp },
+    { name: 'p22.jpeg', title: 'Aloe vera plant', price: 'SOLD', status:'Booking Available', details:aloep },
+    { name: 'p35.jpeg', title: 'Portulaca', price: 'SOLD', status:'Booking Available', details:portulecap },
+    { name: 'p14.jpeg', title: 'Crown of thorns plant', price: 'SOLD', status:'Booking Available', details:mcrownthronp },
+
   ];
   
   const galleryContainer = document.getElementById('imageGallery');
